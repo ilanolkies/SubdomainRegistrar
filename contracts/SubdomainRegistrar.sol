@@ -39,4 +39,19 @@ contract SubdomainRegistrar {
             _owner
         ));
     }
+
+    /**
+     * @dev Registers a subnode under root node in RNS Registry. The owner of the
+     * new node is the transaction sender.
+     *
+     * @param _hash The hash of the label specifying the subnode.
+     */
+    function registerSubdomain (bytes32 _hash) public {
+        rns.call(abi.encodeWithSignature(
+            "setSubnodeOwner(bytes32,bytes32,address)",
+            rootNode,
+            _hash,
+            msg.sender
+        ));
+    }
 }
