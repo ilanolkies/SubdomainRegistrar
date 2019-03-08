@@ -4,5 +4,8 @@
   "license": "MIT",
   "dependencies": {
     "eth-ens-namehash": "^2.0.8"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1"
   }
 }
