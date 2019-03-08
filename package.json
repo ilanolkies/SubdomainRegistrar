@@ -1,0 +1,8 @@
+{
+  "name": "subdomain-registrar",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "eth-ens-namehash": "^2.0.8"
+  }
+}
